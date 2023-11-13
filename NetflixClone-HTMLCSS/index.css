@@ -1,0 +1,290 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: medium;
+    font-family: Netflix Sans,Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header{
+
+    width: 100%;
+    height: 77vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+    display: block;
+
+}
+
+.bg{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+.bg img{
+    width: 100%;
+    height: 100%;    
+    object-fit: cover;
+    transform: scale(1.25) translateY(-10%);
+    overflow: hidden;
+    opacity: 0.6;
+    
+}
+
+
+.overlay-grad{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)0,rgba(0,0,0,0)60%,rgba(0,0,0,0.8)100%);
+}
+
+
+.overlay{
+    /* background-color: brown; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 98%;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+    
+
+}
+
+.nav{
+    height: 30;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav>img{
+    width: 8vw;
+    height: 5vh;
+}
+
+
+.nav-btns{
+    display: flex;
+    margin-top: 8px;
+}
+
+.nav-btns select{
+    padding: 4px 15px;
+    width: 130px;
+    height: 32px;
+    border-radius: 4px;
+    background: transparent;
+    color: #fff;
+}
+
+.nav-btns select *{
+    background-color: #000;
+}
+
+.nav-btns select::selection{
+    background-color: #000;
+}
+
+.nav-btns .button{
+    margin-left: 20px;
+    width: 75px;
+    height: 32px;
+    /* padding: 4px 12px; */
+    background-color: rgb(229,9,20);
+    border-color: rgb(229,9,20);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    color: white;
+    position: relative;
+    width: 100%;
+    height: calc(77% - 15px);
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    text-transform: bold;
+    margin: auto;
+}
+
+.heading>h1{
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+.heading p{
+    
+}
+
+.firstp{
+    font-size: 1.5rem;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.secondp{
+    margin-top: 25px;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.register{
+    display: flex;
+    margin-top: 13px;
+    width: 55%;
+    height: 9%;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+input{
+    width: 55%;
+    height: 95%;
+    border-radius: 5px;
+    background: transparent;
+    color: rgb(39, 38, 38);
+    border: solid 1px rgb(94, 93, 93);
+    padding-left: 5px;
+    background-color: #000;
+    
+}
+
+input::placeholder{
+    color: rgb(170, 169, 169);
+    padding-left: 10px;
+    
+}
+
+.register button{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(229,9,20);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: solid rgb(229,9,20);
+    
+}
+
+
+
+
+
+
+
+
+
+.header .divider{
+    width: 100vw;
+    height: 7.5px;
+    background-color: rgb(39, 38, 38);
+    position: absolute;
+    bottom: 0;
+}
+
+
+.features{
+    width: 100%;
+    background-color: #000;
+    min-height: 100vh;
+    position: relative;
+    display: block;
+    color: #fff;
+}
+
+.feature-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8%;
+    padding-bottom: 3%;
+    padding-top: 1%;
+    margin-top: -1.25%;
+    transform: scale(0.9);
+    flex-direction: row;
+    
+}
+
+.text-col{
+   width: 42%;
+   
+}
+
+.text-col h2{
+    font-size: 3.3rem;
+}
+
+.text-col p{
+    margin-top: 4%;
+    font-size: 1.5rem;
+}
+
+.img-col{
+    width: 42%;
+   
+}
+
+.img-col img{
+    width: 100%;
+}
+
+
+
+.features .divider{
+    width: 100%;
+    height: 7.5px;
+    background-color: rgb(39, 38, 38);
+    position: absolute;
+}
+
+
+.footer{
+    width: 100%;
+    background-color: green;
+    height: 200vh;
+}
+
+@media screen and (max-width: 600px) {
+    .bg img{
+        transform: scale(3);
+    }
+    
+    .header{
+
+        width: 100vw;
+        height: 55vh;
+        overflow: hidden;
+        /* position: absolute; */
+    
+    }
+
+    *{
+        font-size: x-small;
+    }
+
+    .register button{
+        font-size: 0.9rem;
+    }
+
+}
