@@ -131,10 +131,6 @@
 
 }
 
-.heading p{
-    
-}
-
 .firstp{
     font-size: 1.5rem;
     margin-top: 15px;
@@ -267,7 +263,7 @@ input::placeholder{
 
 .accordion-container{
     color: #fff;
-    width: 100%;
+    width: 62%%;
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -291,21 +287,16 @@ input::placeholder{
     padding-bottom: 2%;
 }
 
+ul{
+    width: 100%;
+}
+
 li{
     list-style: none;
 }
 
-.accord-head{
-    color: #fff;
-}
 
-.chkbox{
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-.chkbox input{
+.question{
     width: 100%;
     color: #fff;
     height: 7vh;
@@ -316,29 +307,45 @@ li{
     padding: 2%;
     border: none;
     cursor: pointer;
+    margin-top: 2px;
+    font-size: 2rem;
+    font-weight: 100; 
+    /* position: relative; */
     
 }
 
-.accord-head h3{
-    font-size: 1.5rem;
-    font-weight: 100;
+.question:hover{
+    background-color: rgb(61, 60, 60);
 }
+
+.sign{
+    font-size: 2.5rem;
+    align-self: center;
+}
+
 
 .answer{
     padding: 2%;
     background-color: rgb(39, 38, 38);
     margin-top: 2px;
-    visibility: collapse;
-}
-.answer span{
-    font-size: 1.5rem;
+    font-size: 4rem;
     font-weight: 100;
-    
+    display: none;
+    line-height: 10px;
+    text-indent: 0;
+    padding-top: 0;
 }
 
-.accord-head button:active+.answer{
-    visibility: visible;
+
+.answer:target{
+    display: block;
 }
+
+span{
+    font-size: 1.35rem;
+    align-self: center;
+}
+
 
 
 
